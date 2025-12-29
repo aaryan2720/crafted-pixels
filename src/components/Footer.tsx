@@ -19,7 +19,7 @@ const Footer = () => {
 
     try {
       await emailjs.send(
-        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        'service_0we30iw',
         'template_gusk9za',
         {
           from_name: formData.name,
