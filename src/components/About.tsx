@@ -11,22 +11,22 @@ const About = () => {
             <span className="text-label">About me</span>
             
             <h2 className="heading-lg text-foreground">
-              Designer.<br />
-              Strategist.<br />
-              Creative<br />
-              partner.
+              Developer.<br />
+              Problem Solver.<br />
+              Hackathon<br />
+              Champion.
             </h2>
 
             <p className="text-body max-w-lg">
-              Blending clarity and creativity to build brands with purpose. I'm a freelance brand designer with 12+ years of experience helping startups, creatives, and growing businesses build identities that feel clear.
+              I'm a B-Tech Computer Science student at Deogiri Institute of Engineering and Management Studies, Chhatrapati Sambhajinagar (2023-2027). I specialize in full-stack development and building intelligent systems that solve real-world problems.
             </p>
 
             <p className="text-body max-w-lg">
-              With skills spanning brand strategy, design, marketing, art direction, and brand strategy, I bring a balance of strategy and style to every project. Whatever it is you need, I'm here to guide you every step of the way.
+              With experience in React.js, Node.js, Next.js, React Native, and cloud technologies like AWS, I've led teams and built platforms ranging from citizen-government communication systems to AI-powered deepfake detection tools.
             </p>
 
             <a href="#contact" className="btn-primary inline-flex">
-              Read more
+              Get in touch
               <ArrowRight className="w-4 h-4" />
             </a>
           </div>
@@ -36,7 +36,7 @@ const About = () => {
             <div className="image-container aspect-[3/4] rounded-3xl">
               <img
                 src={aboutPortrait}
-                alt="Designer Portrait"
+                alt="Aaryan Choudhari"
                 className="parallax-image"
               />
             </div>
