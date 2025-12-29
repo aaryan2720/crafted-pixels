@@ -2,11 +2,11 @@ import { ArrowRight } from 'lucide-react';
 import heroPortrait from '@/assets/hero-portrait.jpg';
 
 const Hero = () => {
-  const tags = [
-    { id: '01', label: 'Brand Strategy' },
-    { id: '02', label: 'Brand Identity Design' },
-    { id: '03', label: 'Packaging Design' },
-    { id: '04', label: 'Creative Direction' },
+  const skills = [
+    { id: '01', label: 'React.js' },
+    { id: '02', label: 'Node.js' },
+    { id: '03', label: 'React Native' },
+    { id: '04', label: 'Next.js' },
   ];
 
   return (
@@ -18,20 +18,20 @@ const Hero = () => {
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-8 items-center min-h-[70vh]">
           {/* Left Content */}
           <div className="space-y-8">
-            <p className="hero-label text-label">Hey, I'm a</p>
+            <p className="hero-label text-label">Hey, I'm Aaryan</p>
             
             <h1 className="hero-title heading-xl text-foreground" style={{ perspective: '1000px' }}>
-              <span className="block">Creative</span>
-              <span className="block">Director</span>
+              <span className="block">Software</span>
+              <span className="block">Engineer</span>
             </h1>
 
             <p className="hero-description text-body max-w-md">
-              <span className="text-foreground font-medium">Great design should feel invisible.</span>{' '}
-              From logo to language, I build brands that connect and convert.
+              <span className="text-foreground font-medium">Full Stack & App Developer.</span>{' '}
+              Building responsive web applications and intelligent systems with modern technologies.
             </p>
 
             <div className="hero-cta flex items-center gap-4">
-              <a href="#work" className="btn-primary">
+              <a href="#projects" className="btn-primary">
                 View Projects
                 <ArrowRight className="w-4 h-4" />
               </a>
@@ -47,27 +47,27 @@ const Hero = () => {
               <div className="absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-transparent z-10" />
               <img
                 src={heroPortrait}
-                alt="Creative Director Portrait"
+                alt="Aaryan Choudhari"
                 className="w-full h-full object-cover"
               />
               {/* Floating quote card */}
               <div className="absolute top-8 right-8 bg-card/90 backdrop-blur-sm border border-border/50 rounded-2xl p-4 max-w-[200px] z-20">
                 <p className="text-sm text-foreground font-medium leading-relaxed">
-                  Great design should feel invisible.
+                  SIH 2025 Finalist & Multiple Hackathon Winner
                 </p>
               </div>
             </div>
           </div>
         </div>
 
-        {/* Tags Row */}
+        {/* Skills Row */}
         <div className="hero-tags mt-16 pt-8 border-t border-border/50">
           <div className="flex flex-wrap items-center gap-4">
-            <span className="text-xs text-muted-foreground mr-4">Trusted by Brands I've Helped Shape</span>
-            {tags.map((tag) => (
-              <div key={tag.id} className="pill">
+            <span className="text-xs text-muted-foreground mr-4">Tech Stack</span>
+            {skills.map((skill) => (
+              <div key={skill.id} className="pill">
                 <span className="text-primary text-xs">●</span>
-                <span>{tag.label}</span>
+                <span>{skill.label}</span>
               </div>
             ))}
           </div>
