@@ -1,4 +1,4 @@
-import { ArrowUpRight } from 'lucide-react';
+import { ArrowUpRight, Github, Sparkles } from 'lucide-react';
 import projectAbstract from '@/assets/project-abstract.jpg';
 import projectPackaging from '@/assets/project-packaging.jpg';
 import productHeadphones from '@/assets/product-headphones.jpg';
@@ -100,6 +100,42 @@ const FeaturedWork = () => {
               </div>
             </article>
           ))}
+        </div>
+
+        {/* GitHub CTA */}
+        <div className="mt-16 animate-section">
+          <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-primary/20 via-secondary to-secondary/50 p-8 lg:p-12 border border-primary/30">
+            {/* Background decoration */}
+            <div className="absolute top-0 right-0 w-64 h-64 bg-primary/10 rounded-full blur-3xl" />
+            <div className="absolute bottom-0 left-0 w-48 h-48 bg-primary/5 rounded-full blur-2xl" />
+            
+            <div className="relative flex flex-col lg:flex-row items-center justify-between gap-8">
+              <div className="flex items-center gap-6">
+                <div className="hidden sm:flex items-center justify-center w-20 h-20 rounded-2xl bg-primary/20 border border-primary/30">
+                  <Sparkles className="w-10 h-10 text-primary" />
+                </div>
+                <div className="text-center lg:text-left">
+                  <h3 className="text-2xl lg:text-3xl font-display font-bold text-foreground">
+                    These are just 3 projects.
+                  </h3>
+                  <p className="text-lg text-muted-foreground mt-2">
+                    I have plenty more on my GitHub. Check them out!
+                  </p>
+                </div>
+              </div>
+              
+              <a
+                href="https://github.com/aaryan-choudhari"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-primary text-lg py-4 px-8 inline-flex items-center gap-3 group/btn shrink-0"
+              >
+                <Github className="w-5 h-5" />
+                View GitHub
+                <ArrowUpRight className="w-5 h-5 transition-transform group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1" />
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
