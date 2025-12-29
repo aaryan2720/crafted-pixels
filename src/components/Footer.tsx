@@ -1,9 +1,10 @@
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import { ArrowUpRight, Send, Loader2 } from 'lucide-react';
-import { supabase } from '@/integrations/supabase/client';
+import emailjs from '@emailjs/browser';
 import { toast } from '@/hooks/use-toast';
 
 const Footer = () => {
+  const formRef = useRef<HTMLFormElement>(null);
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
   const [isSubmitting, setIsSubmitting] = useState(false);
 
@@ -17,11 +18,17 @@ const Footer = () => {
     setIsSubmitting(true);
 
     try {
-      const { error } = await supabase.functions.invoke('send-contact-email', {
-        body: formData,
-      });
-
-      if (error) throw error;
+      await emailjs.send(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          message: formData.message,
+          to_email: 'aryan1234choudhari1983@gmail.com',
+        },
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+      );
 
       toast({
         title: "Message sent!",
@@ -55,10 +62,11 @@ const Footer = () => {
               I'm always open to discussing new projects, freelance opportunities, or collaborating on innovative solutions.
             </p>
             
-            <form onSubmit={handleSubmit} className="space-y-4 mt-8">
+            <form ref={formRef} onSubmit={handleSubmit} className="space-y-4 mt-8">
               <div className="grid sm:grid-cols-2 gap-4">
                 <input
                   type="text"
+                  name="from_name"
                   placeholder="Your Name"
                   required
                   value={formData.name}
@@ -67,6 +75,7 @@ const Footer = () => {
                 />
                 <input
                   type="email"
+                  name="from_email"
                   placeholder="Your Email"
                   required
                   value={formData.email}
@@ -75,6 +84,7 @@ const Footer = () => {
                 />
               </div>
               <textarea
+                name="message"
                 placeholder="Your Message"
                 required
                 rows={4}
