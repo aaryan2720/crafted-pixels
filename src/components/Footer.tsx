@@ -27,7 +27,7 @@ const Footer = () => {
           message: formData.message,
           to_email: 'aryan1234choudhari1983@gmail.com',
         },
-        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+        'iFfwxF4YkLwA0g10z'
       );
 
       toast({
