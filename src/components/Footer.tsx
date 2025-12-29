@@ -10,7 +10,7 @@ const Footer = () => {
 
   const socialLinks = [
     { name: 'LinkedIn', href: 'https://linkedin.com/in/aaryan-choudhari' },
-    { name: 'GitHub', href: 'https://github.com/aaryan-choudhari' },
+    { name: 'GitHub', href: 'https://github.com/aaryan2720' },
   ];
 
   const handleSubmit = async (e: React.FormEvent) => {
