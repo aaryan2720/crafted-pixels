@@ -1,4 +1,4 @@
-import { ArrowRight, Award, Briefcase } from 'lucide-react';
+import { ArrowRight, Award, Briefcase,Users } from 'lucide-react';
 
 const Achievements = () => {
   const achievements = [
@@ -17,33 +17,69 @@ const Achievements = () => {
     <section className="py-24 lg:py-32 bg-card/30">
       <div className="container mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-16 items-start">
-          {/* Left Content - Internship */}
-          <div className="space-y-8 animate-section">
-            <span className="text-label">Experience</span>
-            
-            <h2 className="heading-md text-foreground">
-              Internship &<br />
-              Leadership
-            </h2>
+          {/* Left Content - Internship & Leadership */}
+<div className="space-y-8 animate-section">
+  <span className="text-label">Experience</span>
+  
+  <h2 className="heading-md text-foreground">
+    Internship &<br />
+    Leadership
+  </h2>
 
-            <div className="card-portfolio p-6">
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center shrink-0">
-                  <Briefcase className="w-6 h-6 text-primary" />
-                </div>
-                <div>
-                  <h3 className="font-display font-semibold text-foreground">
-                    Backend Lead – Web Development Intern
-                  </h3>
-                  <p className="text-primary text-sm font-medium mt-1">Nish E Service</p>
-                  <p className="text-muted-foreground text-sm mt-1">May 2025 - September 2025</p>
-                  <p className="text-body mt-3">
-                    Led a small team in building responsive web applications and ensuring timely project delivery. Contributed to full-stack development while guiding peers in implementation and collaboration.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+  {/* Internship Card */}
+  <div className="card-portfolio p-6">
+    <div className="flex items-start gap-4">
+      <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center shrink-0">
+        <Briefcase className="w-6 h-6 text-primary" />
+      </div>
+      <div>
+        <h3 className="font-display font-semibold text-foreground">
+          Backend Lead – Web Development Intern
+        </h3>
+        <p className="text-primary text-sm font-medium mt-1">
+          Nish E Service
+        </p>
+        <p className="text-muted-foreground text-sm mt-1">
+          May 2025 – September 2025
+        </p>
+        <p className="text-body mt-3">
+          Led a small team in building responsive web applications and ensuring
+          timely project delivery. Contributed to full-stack development while
+          guiding peers in implementation, architecture decisions, and
+          collaboration.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  {/* Leadership Card */}
+  <div className="card-portfolio p-6">
+    <div className="flex items-start gap-4">
+      <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center shrink-0">
+        <Users className="w-6 h-6 text-primary" />
+      </div>
+      <div>
+        <h3 className="font-display font-semibold text-foreground">
+          Vice Lead – Coding Ninjas Campus Club
+        </h3>
+        <p className="text-primary text-sm font-medium mt-1">
+          Coding Ninjas
+        </p>
+        <p className="text-muted-foreground text-sm mt-1">
+          September 2024 – December 2025 · Maharashtra, India
+        </p>
+        <p className="text-body mt-3">
+          Led the planning and execution of technical programs and coding
+          initiatives as Vice Lead. Collaborated closely with teams to ensure
+          successful delivery of events and projects, strengthening leadership,
+          communication, and problem-solving skills through hands-on technical
+          oversight.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
 
           {/* Right Content - Achievements */}
           <div className="space-y-8 animate-section">
