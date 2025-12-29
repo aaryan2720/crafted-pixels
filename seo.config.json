@@ -1,0 +1,59 @@
+{
+  "seo": {
+    "siteName": "Aaryan Choudhari | Software Engineer & Full Stack Developer",
+    "siteUrl": "https://a-aryan-27.tech",
+    "description": "Award-winning Full Stack Developer. SIH 2025 Finalist, multiple hackathon winner. Specializing in React, Node.js, Next.js.",
+    "author": "Aaryan Choudhari",
+    "primaryKeywords": [
+      "Aaryan Choudhari",
+      "Software Engineer",
+      "Full Stack Developer",
+      "React Developer",
+      "Node.js Developer"
+    ],
+    "openGraph": {
+      "type": "website",
+      "image": "https://a-aryan-27.tech/og-image.png",
+      "imageWidth": 1200,
+      "imageHeight": 630
+    },
+    "twitterCard": {
+      "cardType": "summary_large_image",
+      "creator": "@aaryan_choudhari"
+    },
+    "robots": {
+      "index": true,
+      "follow": true,
+      "maxImagePreview": "large",
+      "maxSnippet": -1,
+      "maxVideoPreview": -1
+    },
+    "socialLinks": {
+      "github": "https://github.com/aaryan",
+      "linkedin": "https://linkedin.com/in/aaryan-choudhari",
+      "twitter": "https://twitter.com/aaryan_choudhari"
+    },
+    "structuredData": {
+      "person": {
+        "type": "Person",
+        "name": "Aaryan Choudhari",
+        "url": "https://a-aryan-27.tech",
+        "jobTitle": "Software Engineer & Full Stack Developer",
+        "knowsAbout": [
+          "React",
+          "Node.js",
+          "Next.js",
+          "TypeScript",
+          "JavaScript",
+          "Web Development",
+          "Full Stack Development"
+        ]
+      },
+      "website": {
+        "type": "WebSite",
+        "name": "Aaryan Choudhari Portfolio",
+        "url": "https://a-aryan-27.tech"
+      }
+    }
+  }
+}
