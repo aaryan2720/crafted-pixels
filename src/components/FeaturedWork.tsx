@@ -1,7 +1,7 @@
 import { ArrowUpRight, Github, Sparkles } from 'lucide-react';
-import projectAbstract from '@/assets/project-abstract.jpg';
-import projectPackaging from '@/assets/project-packaging.jpg';
-import productHeadphones from '@/assets/product-headphones.jpg';
+import projectCommunityPulse from '@/assets/project-community-pulse.jpg';
+import projectEchobreaker from '@/assets/project-echobreaker.jpg';
+import projectHawk from '@/assets/project-hawk.jpg';
 
 const FeaturedWork = () => {
   const projects = [
@@ -12,8 +12,9 @@ const FeaturedWork = () => {
       date: 'Aug 2025',
       description: 'Built a comprehensive issue reporting system connecting citizens with government officials to provide real-time grievance resolution and community feedback. Enabled automated issue routing and transparent status tracking with role-based dashboards.',
       tech: ['React.js', 'Node.js', 'MongoDB', 'REST APIs'],
-      image: projectAbstract,
+      image: projectCommunityPulse,
       color: 'from-orange-600/20',
+      github: 'https://github.com/aaryan2720/Community_Pulse',
     },
     {
       id: 2,
@@ -22,8 +23,9 @@ const FeaturedWork = () => {
       date: 'Nov 2025',
       description: 'Developed an intelligent agentic system to help journalists detect coordinated deepfake and propaganda operations. Enabled real-time monitoring, multimodal analysis, and network mapping of misinformation campaigns.',
       tech: ['Python', 'Next.js', 'PostgreSQL', 'AWS'],
-      image: projectPackaging,
+      image: projectEchobreaker,
       color: 'from-blue-500/20',
+      github: 'https://github.com/aaryan2720/echo-sentinel-agent',
     },
     {
       id: 3,
@@ -32,8 +34,9 @@ const FeaturedWork = () => {
       date: 'Jan 2025',
       description: 'Built HAWK, a web scraping tool to detect vulnerabilities in OEM platforms. Enhanced cybersecurity risk management through automated vulnerability detection and alerting system.',
       tech: ['Python', 'Node.js', 'Express.js', 'MongoDB'],
-      image: productHeadphones,
+      image: projectHawk,
       color: 'from-green-500/20',
+      github: 'https://github.com/aaryan2720/Pravartak_Hawk',
     },
   ];
 
@@ -93,10 +96,15 @@ const FeaturedWork = () => {
                     </span>
                   ))}
                 </div>
-                <button className="btn-primary text-sm py-2 px-5 mt-4 inline-flex self-start opacity-0 group-hover:opacity-100 transition-opacity">
+                <a 
+                  href={project.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-primary text-sm py-2 px-5 mt-4 inline-flex self-start opacity-0 group-hover:opacity-100 transition-opacity"
+                >
                   View Project
                   <ArrowUpRight className="w-4 h-4" />
-                </button>
+                </a>
               </div>
             </article>
           ))}
@@ -125,7 +133,7 @@ const FeaturedWork = () => {
               </div>
               
               <a
-                href="https://github.com/aaryan-choudhari"
+                href="https://github.com/aaryan2720"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-primary text-lg py-4 px-8 inline-flex items-center gap-3 group/btn shrink-0"
