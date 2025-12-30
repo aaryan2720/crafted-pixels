@@ -3,11 +3,25 @@ import heroPortrait from '@/assets/hero-portrait.jpg';
 
 const Hero = () => {
   const skills = [
-    { id: '01', label: 'React.js' },
-    { id: '02', label: 'Node.js' },
-    { id: '03', label: 'React Native' },
-    { id: '04', label: 'Next.js' },
-  ];
+  { id: '01', label: 'React.js' },
+  { id: '02', label: 'Next.js' },
+  { id: '03', label: 'React Native' },
+  { id: '04', label: 'Node.js' },
+  { id: '05', label: 'Express.js' },
+  { id: '06', label: 'REST APIs' },
+  { id: '07', label: 'MongoDB' },
+  { id: '08', label: 'PostgreSQL' },
+  { id: '09', label: 'SQL' },
+  { id: '10', label: 'JavaScript' },
+  { id: '11', label: 'Python' },
+  { id: '12', label: 'Java' },
+  { id: '13', label: 'AWS' },
+  { id: '14', label: 'Git & GitHub' },
+  { id: '15', label: 'Postman' },
+  { id: '16', label: 'GSAP' },
+  { id: '17', label: 'Data Structures & Algorithms' }
+];
+
 
   return (
     <section className="relative min-h-screen pt-24 pb-16 overflow-hidden">
