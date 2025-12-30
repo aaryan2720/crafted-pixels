@@ -9,7 +9,7 @@ const Achievements = () => {
     { title: '2nd Prize', event: 'IDEA Hackathon, Mumbai' },
     { title: '2nd Prize', event: 'DIPEX 2025, Pune' },
     { title: '2nd Prize', event: 'WINGS 2025, Ch. Sambhajinagar' },
-    { title: '3rd Prize', event: 'Ideathon 2.0, Mumbai' },
+    { title: '3rd Prize', event: 'Ideation 2.0, Mumbai' },
     { title: '2nd Runner Up', event: 'Hack The Gap, Ch. Sambhajinagar' },
   ];
 

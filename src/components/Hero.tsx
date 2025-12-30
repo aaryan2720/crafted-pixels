@@ -65,7 +65,7 @@ const Hero = () => {
                 className="w-full h-full object-cover"
               />
               {/* Floating quote card */}
-              <div className="absolute top-8 right-8 bg-card/90 backdrop-blur-sm border border-border/50 rounded-2xl p-4 max-w-[200px] z-20">
+              <div className="absolute bottom-8 right-8 md:top-8 md:bottom-auto bg-card/90 backdrop-blur-sm border border-border/50 rounded-2xl p-4 max-w-[200px] z-20">
                 <p className="text-sm text-foreground font-medium leading-relaxed">
                   SIH 2025 Finalist & Multiple Hackathon Winner
                 </p>
