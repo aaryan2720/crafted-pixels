@@ -121,12 +121,6 @@ const Footer = () => {
               </a>
             </div>
 
-            <div>
-              <span className="text-label">Phone</span>
-              <a href="tel:+918446144948" className="block text-xl font-display font-semibold text-foreground hover:text-primary transition-colors mt-2">
-                +91 8446144948
-              </a>
-            </div>
 
             <div>
               <span className="text-label">Location</span>
