@@ -40,34 +40,36 @@ export const useGsapAnimations = () => {
         '-=0.4'
       );
 
-    // Scroll-triggered animations for sections
+    // Scroll-triggered animations for sections with smoother settings
     gsap.utils.toArray<HTMLElement>('.animate-section').forEach((section) => {
       gsap.fromTo(section,
         { opacity: 0, y: 60 },
         {
           opacity: 1,
           y: 0,
-          duration: 1,
+          duration: 1.2,
           ease: 'power3.out',
           scrollTrigger: {
             trigger: section,
             start: 'top 85%',
             end: 'top 50%',
             toggleActions: 'play none none reverse',
+            smoothChildTiming: true,
           },
         }
       );
     });
 
-    // Card animations
+    // Card animations with stagger for smooth entrance
     gsap.utils.toArray<HTMLElement>('.animate-card').forEach((card, i) => {
       gsap.fromTo(card,
-        { opacity: 0, y: 80 },
+        { opacity: 0, y: 80, scale: 0.95 },
         {
           opacity: 1,
           y: 0,
-          duration: 0.8,
-          delay: i * 0.1,
+          scale: 1,
+          duration: 1,
+          delay: i * 0.15,
           ease: 'power3.out',
           scrollTrigger: {
             trigger: card,
@@ -78,7 +80,7 @@ export const useGsapAnimations = () => {
       );
     });
 
-    // Parallax effect on images
+    // Enhanced parallax effect with smoother scrubbing
     gsap.utils.toArray<HTMLElement>('.parallax-image').forEach((image) => {
       gsap.fromTo(image,
         { y: -30 },
@@ -89,20 +91,20 @@ export const useGsapAnimations = () => {
             trigger: image,
             start: 'top bottom',
             end: 'bottom top',
-            scrub: 1,
+            scrub: 1.5, // Increased scrub for smoother parallax
           },
         }
       );
     });
 
-    // Text reveal animation
+    // Text reveal animation with smooth fade
     gsap.utils.toArray<HTMLElement>('.text-reveal').forEach((text) => {
       gsap.fromTo(text,
         { opacity: 0, y: 40 },
         {
           opacity: 1,
           y: 0,
-          duration: 0.8,
+          duration: 1,
           ease: 'power3.out',
           scrollTrigger: {
             trigger: text,
