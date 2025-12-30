@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <style>
+      .bg { fill: #0f172a; }
+      .gradient-bg { fill: url(#bgGrad); }
+      .text-name { font-family: 'Inter', 'Segoe UI', Arial, sans-serif; font-weight: 700; font-size: 64px; fill: white; }
+      .text-title { font-family: 'Inter', 'Segoe UI', Arial, sans-serif; font-weight: 500; font-size: 32px; fill: #94a3b8; }
+      .text-badge { font-family: 'Inter', 'Segoe UI', Arial, sans-serif; font-weight: 600; font-size: 18px; fill: #3b82f6; }
+      .accent-line { fill: none; stroke: url(#lineGrad); stroke-width: 3; }
+      .circle-accent { fill: none; stroke: url(#lineGrad); stroke-width: 2; opacity: 0.3; }
+      .badge-bg { fill: #1e293b; stroke: #3b82f6; stroke-width: 2; rx: 20; }
+    </style>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e293b;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="630" class="gradient-bg"/>
+  
+  <!-- Decorative circles -->
+  <circle cx="100" cy="100" r="80" class="circle-accent"/>
+  <circle cx="1100" cy="530" r="60" class="circle-accent"/>
+  <circle cx="1050" cy="100" r="40" class="circle-accent"/>
+  
+  <!-- Accent lines -->
+  <line x1="50" y1="315" x2="200" y2="315" class="accent-line"/>
+  
+  <!-- Main Content Container -->
+  <g id="content">
+    <!-- Name -->
+    <text x="250" y="280" class="text-name">Aaryan Choudhari</text>
+    
+    <!-- Title -->
+    <text x="250" y="340" class="text-title">Software Engineer &amp; Full Stack Developer</text>
+    
+    <!-- Badges -->
+    <g transform="translate(250, 380)">
+      <!-- Badge 1: SIH 2025 -->
+      <rect width="180" height="45" class="badge-bg"/>
+      <text x="90" y="30" class="text-badge" text-anchor="middle">🏆 SIH 2025 Finalist</text>
+      
+      <!-- Badge 2: Hackathon Winner -->
+      <g transform="translate(200, 0)">
+        <rect width="200" height="45" class="badge-bg"/>
+        <text x="100" y="30" class="text-badge" text-anchor="middle">🎯 Hackathon Winner</text>
+      </g>
+    </g>
+    
+    <!-- Tech Stack Indicators -->
+    <g transform="translate(250, 460)">
+      <text class="text-title" style="font-size: 20px; fill: #64748b;">
+        React • Node.js • Next.js • TypeScript
+      </text>
+    </g>
+  </g>
+  
+  <!-- Logo/Brand Mark (AC) in corner -->
+  <g transform="translate(80, 80)">
+    <circle cx="0" cy="0" r="50" class="bg" stroke="url(#lineGrad)" stroke-width="3"/>
+    <text x="0" y="18" text-anchor="middle" style="font-family: 'Segoe UI', Arial, sans-serif; font-weight: 700; font-size: 40px; fill: white;">AC</text>
+  </g>
+  
+  <!-- Website URL at bottom -->
+  <text x="250" y="570" style="font-family: 'Inter', 'Segoe UI', Arial, sans-serif; font-weight: 400; font-size: 18px; fill: #64748b;">
+    🌐 a-aryan-27.tech
+  </text>
+</svg>
