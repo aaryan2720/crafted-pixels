@@ -53,7 +53,7 @@ export const useGsapAnimations = () => {
             trigger: section,
             start: 'top 85%',
             end: 'top 50%',
-            toggleActions: 'play none none reverse',
+            toggleActions: 'play none none none',
             smoothChildTiming: true,
           },
         }
@@ -74,7 +74,7 @@ export const useGsapAnimations = () => {
           scrollTrigger: {
             trigger: card,
             start: 'top 90%',
-            toggleActions: 'play none none reverse',
+            toggleActions: 'play none none none',
           },
         }
       );
@@ -109,7 +109,7 @@ export const useGsapAnimations = () => {
           scrollTrigger: {
             trigger: text,
             start: 'top 85%',
-            toggleActions: 'play none none reverse',
+            toggleActions: 'play none none none',
           },
         }
       );

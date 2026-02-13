@@ -28,6 +28,33 @@ const Achievements = () => {
 
   {/* Internship Card */}
   <div className="card-portfolio p-6">
+  <div className="flex items-start gap-4">
+    <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center shrink-0">
+      <Users className="w-6 h-6 text-primary" />
+    </div>
+    <div>
+      <h3 className="font-display font-semibold text-foreground">
+        Delegate – All India Political Parties Meet (AIPPM)
+      </h3>
+      <p className="text-primary text-sm font-medium mt-1">
+        GMC Conference 2026 · GECA MUN Club
+      </p>
+      <p className="text-muted-foreground text-sm mt-1">
+        January 2026 · Maharashtra, India
+      </p>
+      <p className="text-body mt-3">
+        Represented Shri G. Kishan Reddy in a high-level political simulation,
+        contributing to structured policy deliberations on electoral reforms.
+        Recognized with a Special Mention for analytical depth, consensus-building,
+        and strategic debate leadership, strengthening decision-making, public
+        speaking, and institutional thinking under competitive conditions.
+      </p>
+    </div>
+  </div>
+</div>
+
+  {/* Internship Card */}
+  <div className="card-portfolio p-6">
     <div className="flex items-start gap-4">
       <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center shrink-0">
         <Briefcase className="w-6 h-6 text-primary" />
@@ -79,6 +106,8 @@ const Achievements = () => {
     </div>
   </div>
 </div>
+
+
 
 
           {/* Right Content - Achievements */}

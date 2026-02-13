@@ -62,11 +62,9 @@ const FeaturedWork = () => {
           {projects.map((project, index) => (
             <article 
               key={project.id} 
-              className={`group card-portfolio animate-card cursor-pointer ${
-                index === 0 ? 'lg:grid lg:grid-cols-2 lg:gap-0' : ''
-              }`}
+              className="group card-portfolio animate-card cursor-pointer lg:grid lg:grid-cols-2 lg:gap-0"
             >
-              <div className={`relative overflow-hidden ${index === 0 ? 'aspect-[4/3] lg:aspect-auto lg:min-h-[400px]' : 'aspect-[16/9]'}`}>
+              <div className="relative overflow-hidden aspect-[4/3] lg:aspect-auto lg:min-h-[400px]">
                 <div className={`absolute inset-0 bg-gradient-to-t ${project.color} to-transparent z-10`} />
                 <img
                   src={project.image}
@@ -77,7 +75,7 @@ const FeaturedWork = () => {
                   <span className="pill text-xs">{project.date}</span>
                 </div>
               </div>
-              <div className={`p-6 lg:p-8 space-y-4 ${index === 0 ? 'flex flex-col justify-center' : ''}`}>
+              <div className="p-6 lg:p-8 space-y-4 flex flex-col justify-center">
                 <div>
                   <span className="text-primary text-xs font-medium uppercase tracking-wider">
                     {project.subtitle}
