@@ -3,6 +3,15 @@ import { ExternalLink } from 'lucide-react';
 const freelanceProjects = [
   {
     id: 1,
+    title: 'Amit Holidays',
+    client: 'Amit Holidays',
+    description:
+      'A modern travel and tourism platform for exploring destinations, browsing holiday packages, and managing enquiries.',
+    status: 'Live',
+    link: 'https://www.amitholidays.com/',
+  },
+  {
+    id: 2,
     title: 'Giri Tours & Travels',
     client: 'Giri Tours & Travels',
     description:
@@ -11,7 +20,7 @@ const freelanceProjects = [
     link: 'https://www.giritravels.com',
   },
   {
-    id: 2,
+    id: 3,
     title: 'Resourz Group',
     client: 'Resourz Group',
     description:
