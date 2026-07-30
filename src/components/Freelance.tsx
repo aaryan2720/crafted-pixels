@@ -28,6 +28,15 @@ const freelanceProjects = [
     status: 'Live',
     link: 'https://resourzgroup.com',
   },
+  {
+  id: 4,
+  title: 'KP Infra',
+  client: 'KP Infra',
+  description:
+    'A leading real estate and infrastructure company delivering premium residential and commercial developments. Focused on quality construction, innovative design, and sustainable spaces that enhance modern lifestyles and long-term value.',
+  status: 'Live',
+  link: 'https://www.kpinfrastructure.com',
+  },
 ];
 
 
